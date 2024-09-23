@@ -60,11 +60,11 @@ class BitvavoPriceSensor(Entity):
         try:            
             prices = {}
             # Fetch the balance and prices of all coins
-            balances = self._client.balance()
-            tickers = self._client.tickerPrice()
+            balances = self._client.balance() # Fetch the balance of all your coins (this is where your API key and secret are used)
+            tickers = self._client.tickerPrice() #Fetch the current price of all markets. (public data)
             print(f"tickers: {tickers}")
 
-            # Cache the prices of all markets for faster lookups
+            # Cache the prices of all markets in a key/value array for faster lookups
             for item in tickers:
                 print(item)
                 if 'price' in item:
@@ -74,13 +74,12 @@ class BitvavoPriceSensor(Entity):
 
             # Calculate the total balance in EUR by converting the balances to EUR and accumulating the values of each coin.
             for balance in balances:
-                # Fetch the current price of the coin to convert to a common currency (e.g., EUR)
+                # Fetch the current price of the coin to convert to a common currency (EUR)
                 symbol = f"{balance['symbol']}-EUR"
                 if symbol == 'EUR-EUR':
                     current_price = 1.0
                 else:
-                    current_price = prices.get(symbol, {'price': 0.0})  # add the market to the list if it doesn't exist.'
-
+                    current_price = prices.get(symbol, {'price': 0.0})  # add the market to the list if it doesn't exist.
 
                 # Calculate the total value of the coin
                 coin_balance = float(balance['available'])
