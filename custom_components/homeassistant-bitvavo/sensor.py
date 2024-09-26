@@ -55,10 +55,10 @@ class BitvavoPriceSensor(Entity):
         """Return the icon for this sensor."""
         return "mdi:currency-eur"
 
-    @property
-    def entity_picture(self):
-        """Return the picture for the sensor."""
-        return "/local/bitvavo.png"  # 'local' refers to the www folder
+    #@property
+    #def entity_picture(self):
+    #    """Return the picture for the sensor."""
+    #    return "/local/bitvavo.png"  # 'local' refers to the www folder
 
     def update(self):
         """Fetch the latest price from Bitvavo API."""
