@@ -17,7 +17,7 @@ To do it search for `homeassistant-bitvavo` in *Integrations* section.
 
 ### Manual
 
-To install this integration manually you have to download [*saver.zip*](https://github.com/joostkuif/homeassistant-bitvavo/releases/latest/download/saver.zip) and extract its contents to `config/custom_components/bitvavo` directory:
+To install this integration manually you have to download [*bitvavo.zip*](https://github.com/joostkuif/homeassistant-bitvavo/releases/latest/download/bitvavo.zip) and extract its contents to `config/custom_components/bitvavo` directory:
 ```bash
 mkdir -p custom_components/bitvavo
 cd custom_components/bitvavo
