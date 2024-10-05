@@ -6,6 +6,8 @@ A small Homeassistant Custom Integration featuring a sensor tracking the total v
 ## Why did i build it
 Another side project. I just wanted to learn some basic Python programming as the market is demanding this language more and more recently. First i programmed the api calls in a cli. Then i thought why not make it available in Homeassistant? And here we are. :-)
 
+This integration polls the bitvavo every 30 seconds with only 2 requests. I might make the interval period configurable in a future release.
+
 ## Installation
 
 ### Using [HACS](https://hacs.xyz/) (recommended)
@@ -17,27 +19,31 @@ To do it search for `homeassistant-bitvavo` in *Integrations* section.
 
 ### Manual
 
-To install this integration manually you have to download [*bitvavo.zip*](https://github.com/joostkuif/homeassistant-bitvavo/archive/refs/tags/v0.0.2.zip) and extract its contents to `config/custom_components/bitvavo` directory:
+To install this integration manually you have to download [*bitvavo.zip*](https://github.com/joostkuif/homeassistant-bitvavo/archive/refs/tags/v1.0.0.zip) and extract its contents to `config/custom_components/bitvavo` directory:
 ```bash
 mkdir -p custom_components/bitvavo
 cd custom_components/bitvavo
-wget https://github.com/joostkuif/homeassistant-bitvavo/archive/refs/tags/v0.0.2.zip
-unzip v0.0.2.zip
-rm v0.0.2.zip
+wget https://github.com/joostkuif/homeassistant-bitvavo/archive/refs/tags/v1.0.0.zip
+unzip v1.0.0.zip
+rm v1.0.0.zip
 ```
 
 ## Configuration
 
-### Create an API key
+### 1) Create an API key
 In your Bitvavo account, you have to generate an API key and corresponding secret. The most important part is that
 <b>YOU ONLY GIVE IT READ RIGHTS</b>.
-I am not responsible for your keys if someone (gets their hands on them and) starts trading or does withdraw coins with your key.
+I am not responsible for your keys if something or someone (gets their hands on them and) starts trading or does withdraw coins with your key.
 
 The generated API key and secret should be saved for later use when you install and configure this Custom Integration.
 
-### Using UI in Homeassistant
+### 2) Using UI in Homeassistant to configure the API key and secret
+
+Use the button below:
 
 [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=bitvavo)
+
+#### Or do it Manually:
 
 From the Home Assistant front page go to **Configuration** and then select **Integrations** from the list.
 
