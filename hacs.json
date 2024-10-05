@@ -1,6 +1,7 @@
 {
   "name": "Bitvavo",
+  "content_in_root": false,
   "render_readme": true,
-  "zip_release": true,
-  "filename": "v0.0.2.zip"
+  "domains": ["sensor"],
+  "homeassistant": "0.100.0"
 }
