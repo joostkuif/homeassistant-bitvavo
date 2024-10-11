@@ -1,7 +1,7 @@
 {
     "domain": "bitvavo",
     "name": "Bitvavo Wallet value",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "documentation": "https://github.com/joostkuif/homeassistant-bitvavo",
     "issues": "https://github.com/joostkuif/homeassistant-bitvavo/issues",
     "requirements": ["python-bitvavo-api>=1.1.6"],

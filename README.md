@@ -6,7 +6,7 @@ A small Homeassistant Custom Integration featuring a sensor tracking the total v
 ## Why did i build it
 Another side project. I just wanted to learn some basic Python programming as the market is demanding this language more and more recently. First i programmed the api calls in a cli. Then i thought why not make it available in Homeassistant? And here we are. :-)
 
-This integration polls the bitvavo every 30 seconds with only 2 requests. I might make the interval period configurable in a future release.
+This integration polls the bitvavo API every 30 seconds with only 2 requests. I might make the interval period configurable in a future release.
 
 ## Installation
 
