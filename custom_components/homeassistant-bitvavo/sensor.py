@@ -61,10 +61,10 @@ class BitvavoPriceSensor(Entity):
         """Return the icon for this sensor."""
         return "mdi:currency-eur"
 
-    #@property
-    #def entity_picture(self):
-    #    """Return the picture for the sensor."""
-    #    return "/local/bitvavo.png"  # 'local' refers to the www folder
+    @property
+    def entity_picture(self):
+       """Return the picture for the sensor."""
+       return "https://bitvavo.com/press/blue/bitvavo-mark/bitvavo-mark-blue.png"
 
     def update(self):
         """Fetch the latest price from Bitvavo API."""
@@ -79,7 +79,7 @@ class BitvavoPriceSensor(Entity):
 
             # Cache the prices of all markets in a key/value array for faster lookups
             for item in tickers:
-                print(item)
+                _LOGGER.debug(f"item: {item}")
                 if 'price' in item:
                     prices.update({item['market']: item['price']})
 
