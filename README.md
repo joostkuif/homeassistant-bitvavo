@@ -19,13 +19,13 @@ To do it search for `homeassistant-bitvavo` in *Integrations* section.
 
 ### Manual
 
-To install this integration manually you have to download [*bitvavo.zip*](https://github.com/joostkuif/homeassistant-bitvavo/archive/refs/tags/v1.0.0.zip) and extract its contents to `config/custom_components/bitvavo` directory:
+To install this integration manually you have to download [*bitvavo.zip*](https://github.com/joostkuif/homeassistant-bitvavo/archive/refs/tags/v1.1.0.zip) and extract its contents to `config/custom_components/bitvavo` directory:
 ```bash
 mkdir -p custom_components/bitvavo
 cd custom_components/bitvavo
-wget https://github.com/joostkuif/homeassistant-bitvavo/archive/refs/tags/v1.0.0.zip
-unzip v1.0.0.zip
-rm v1.0.0.zip
+wget https://github.com/joostkuif/homeassistant-bitvavo/archive/refs/tags/v1.1.0.zip
+unzip v1.1.0.zip
+rm v1.1.0.zip
 ```
 
 ## Configuration
