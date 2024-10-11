@@ -7,6 +7,8 @@
     "requirements": ["python-bitvavo-api>=1.1.6"],
     "codeowners": ["@joostkuif"],
     "config_flow": true,
-    "iot_class": "cloud_polling"
+    "iot_class": "cloud_polling",
+    "icon": "https://bitvavo.com/press/blue/bitvavo-mark/bitvavo-mark-blue.png",
+    "logo": "https://bitvavo.com/press/black/bitvavo-mark-and-logo/bitvavo-mark-and-logo-black.png"
   }
   
